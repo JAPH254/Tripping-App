@@ -13,7 +13,6 @@ export interface Trip {
 
 export const getTrips = async () => {
   const response = await axios.get<Trip[]>(`${API_URL}trips/`);
-  console.log(response)
   return response.data;
 };
 
